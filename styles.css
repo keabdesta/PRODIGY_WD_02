@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Stopwatch Container */
+  .stopwatch-container {
+    width: 30%; /* Set the width to 80% of the parent element */
+    margin: 40px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stopwatch Display */
+  
+  .stopwatch-display {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Buttons */
+  
+  .button-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Lap and Pause Buttons */
+  
+  .lap-button {
+    margin-right: 20px;
+  }
+  
+  .pause-button {
+    margin-left: 20px;
+  }
+  
+  /* Lap Times */
+  
+  .lap-times {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lap-times li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .lap-times li:last-child {
+    border-bottom: none;
+  }
+  
+  .lap-times li span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .stopwatch-container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stopwatch-container {
+      margin: 10px auto;
+    }
+    .stopwatch-display {
+      font-size: 48px;
+    }
+    button {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
